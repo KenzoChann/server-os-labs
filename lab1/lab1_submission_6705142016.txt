@@ -1,19 +1,19 @@
 ===BEGIN LAB1 SUBMISSION===
 student_id: 6705142016
-timestamp: 2026-09-01T04:24:28Z
+timestamp: 2026-09-01T04:53:22Z
 hostname: ubuntu
 ---[user: getent passwd]---
-mira208:x:1001:1002::/home/mira208:/bin/sh
+mira208:x:1001:1001::/home/mira208:/bin/sh
 ---[group: getent group]---
-qa:x:1001:mira208
+qa:x:1001:
 ---[user-in-group: id]---
-uid=1001(mira208) gid=1002(mira208) groups=1002(mira208),1001(qa)
+uid=1001(mira208) gid=1001(qa) groups=1001(qa)
 ---[file stat: home file mode/owner]---
-/home/mira208/report_8350.txt mode=644 owner=mira208 group=mira208
+/home/mira208/report_8350.txt mode=664 owner=mira208 group=qa
 ---[sshd effective config]---
-port 22
-permitrootlogin yes
-passwordauthentication yes
+port 2356
+permitrootlogin no
+passwordauthentication no
 ---[integrity]---
-sshd_sha256: 389aed11fc930bfd98ae8fe2608a0c127f2dd9af405f22755ae729d890a54d02
+sshd_sha256: 79b1b6b8fbe1f020e1304cd54cfcc3a05ba0b87429787ac7d30df1e2be52a85d
 ===END LAB1 SUBMISSION===
