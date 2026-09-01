@@ -1,15 +1,15 @@
 ===BEGIN LAB1 SUBMISSION===
 student_id: 6705142016
-timestamp: 2026-09-01T04:10:31Z
+timestamp: 2026-09-01T04:24:28Z
 hostname: ubuntu
 ---[user: getent passwd]---
-(MISSING user mira208)
+mira208:x:1001:1002::/home/mira208:/bin/sh
 ---[group: getent group]---
-(MISSING group qa)
+qa:x:1001:mira208
 ---[user-in-group: id]---
-(cannot id mira208)
+uid=1001(mira208) gid=1002(mira208) groups=1002(mira208),1001(qa)
 ---[file stat: home file mode/owner]---
-(MISSING file report_8350.txt)
+/home/mira208/report_8350.txt mode=644 owner=mira208 group=mira208
 ---[sshd effective config]---
 port 22
 permitrootlogin yes
